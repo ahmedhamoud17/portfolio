@@ -1,0 +1,87 @@
+
+.intro{
+    font-size: 70px;
+}
+
+iframe{
+    width: 600px;
+    height: 500px;
+}
+
+div span{
+    color: #266DB6;
+}
+
+a i:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.main-button {
+    background-color: transparent;
+    border: 1px solid #266DB6;
+    box-sizing: border-box;
+    color: #00132C;
+    font-size: 30px;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .main-button:hover,
+  .main-button:active {
+    outline: 0;
+  }
+  
+  .main-button:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .main-button:before {
+    background-color: #266eb654;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .main-button:hover:before {
+    background-color: #266DB6;
+  }
+  
+  @media (min-width: 768px) {
+    .main-button {
+      padding: 16px 32px;
+    }
+  }
+
+
+@media (min-width:0px) and (max-width:768px){
+    .intro{
+        font-size: 50px;
+    } 
+    iframe{
+        width: 350px;
+        height: 350px;
+    } 
+}
+
+@media (min-width:769px) and (max-width:993px){
+    
+    iframe{
+        width: 350px;
+        height: 400px;
+    } 
+    .intro{
+        font-size: 50px;
+    }
+}

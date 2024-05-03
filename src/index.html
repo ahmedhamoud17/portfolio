@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfollio</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+  <script>
+    function openWhatsApp() {
+      var phoneNumber = '201013477060'; // Your phone number with country code
+      var message = 'Hello!'; // Optional: Pre-filled message
+
+      // Construct the WhatsApp URL
+      var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+
+      // Open the WhatsApp chat in a new tab
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+
+</html>
